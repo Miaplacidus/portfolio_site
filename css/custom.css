@@ -1,5 +1,5 @@
 body {
-  padding-top: 70px;
+  padding-top: 50px;
 }
 
 .navbar{
@@ -33,4 +33,14 @@ body {
     background: none;
 }
 
+.profile {
+  background:url('../img/bruce.jpg') top center no-repeat;
+  background-size: cover;
+  /*font-family: 'Press Start 2P';*/
+  color: #4a98db;
+  /*height: 800px;*/
+}
 
+.content {
+  padding: 10%;
+}
