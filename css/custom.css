@@ -38,9 +38,32 @@ body {
   background-size: cover;
   /*font-family: 'Press Start 2P';*/
   color: #4a98db;
-  /*height: 800px;*/
+
 }
 
 .content {
-  padding: 10%;
+  padding: 2% 6%;
+  border-bottom: #dee4ea solid 1px;
+}
+
+.profile .social i {
+  padding: 3px;
+  border: solid #4a98db 1px;
+}
+
+.social {
+  padding: 3% 3%;
+  border-bottom: #e0e5ea solid 1px;
+  font-size: 1.2em;
+}
+
+.about {
+  padding: 14% 3%;
+  border-bottom: #e0e5ea solid 1px;
+  color: #4a98db;
+}
+
+.findme {
+  padding: 3% 3%;
+  color: white;
 }
