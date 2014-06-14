@@ -77,3 +77,8 @@ body {
 .box i{
   font-size: 3em;
 }
+
+#portfolio nav {
+  font-family: 'Raleway';
+  font-size: .8em;
+}

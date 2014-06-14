@@ -13,8 +13,6 @@
     <link href="http://fonts.googleapis.com/css?family=Raleway:400" rel="stylesheet" type="text/css">
     <link href='http://fonts.googleapis.com/css?family=Press+Start+2P' rel='stylesheet' type='text/css'>
     <link href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-    <!-- JavaScript -->
-    <script src="js/respond.js"></script>
 </head>
 
 <body>
@@ -143,7 +141,7 @@
 
 
           <!-- GITHUB ACTIVITY -->
-          <div class="col-lg-4 col-md-6 pull-right">
+          <div class="col-lg-4 col-md-6 col-xs-12 pull-right">
             <div class = "box github">
               <i class="fa fa-github-alt"></i>
               <h3>Recent Github Activity</h3>
@@ -171,8 +169,20 @@
     </section>
 
     <!-- section 4: portfolio -->
-    <section>
-
+    <section class='row' id='portfolio'>
+      <nav class='navbar navbar-inverse'>
+        <div class='container'>
+          <ul class='nav navbar-nav'>
+            <li class="active"><a href="#">ALL</a></li>
+            <li><a href="#">Ruby</a></li>
+            <li><a href="#">JavaScript</a></li>
+            <li><a href="#">Sinatra</a></li>
+            <li><a href="#">Rails</a></li>
+            <li><a href="#">Ember</a></li>
+            <li><a href="#">HTML/CSS/jQuery</a></li>
+          </ul>
+        </div>
+      </nav>
     </section>
 
     <!-- section 5: blog -->
@@ -189,6 +199,7 @@
 <!-- javascript -->
   <script src="http://code.jquery.com/jquery-latest.min.js"></script>
   <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/1.5.25/jquery.isotope.min.js"></script>
   <script src="js/custom.js"></script>
 </body>
 </html>
