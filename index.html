@@ -18,7 +18,7 @@
 
 <body>
 
-  <!-- row 1: navigation -->
+  <!-- section 1: navigation -->
     <div class="navbar navbar-default navbar-fixed-top" role="navigation">
       <div class="container">
         <div class="navbar-header">
@@ -41,7 +41,7 @@
       </div>
     </div>
 
-    <!-- row 2: profile -->
+    <!-- section 2: profile -->
     <section class="row profile">
       <div class='content'>
         <div class="row social">
@@ -63,18 +63,18 @@
       </div>
     </section>
 
-    <!-- row 4: resume -->
+    <!-- section 3: resume -->
     <section class='row' id='resume'>
       <div class='content'>
         <div class="row">
-          <div class="col-lg-4 col-md-6">
+          <div class="col-lg-4 col-md-6 pull-left">
             <div class = "box whoami">
               <i class="fa fa-user"></i>
               <h3>Who Am I?</h3>
               <p>Ifu is a weird-ass kid from Chi-Town whose passions include software
                 development and practicing Shaolin kung fu (Chicago Shaolin Temple, holla!) She's
                 a recent graduate of the MakerSquare and is currently seeking a position
-                as a full-stack developer in Chicago or San Francisco. She's a complete smart-ass
+                as a full-stack developer in Chicago or San Francisco. She's a complete smart-aleck
                 and speaks of herself exclusively in the third-person. You'll love her!
               </p>
               <div class='row extra'>
@@ -85,78 +85,103 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6">
+
+          <div class="col-lg-4 col-md-6 pull-right">
+            <!-- EXPERIENCE -->
             <div class = "box experience">
               <i class="fa fa-eye"></i>
               <h3>Experience</h3>
-              <h5>MakerSquare <span class='location'>Austin, TX, USA</span></h5>
+              <h5>MakerSquare</h5>
+                <h6 class='location'>Austin, TX, USA</h6>
+                <h6 class='date'>March 2014 - June 2014</h6>
                 <p><span class='job'>[Full-Stack Developer]</span> MakerSquare is a 12-week, intensive program that trains students to become
                   full-stack web developers. Students spend 70+ hours a week learning Ruby and
                   JavaScript, solid software design principles, practical applications of
                   algorithms, and various frameworks, including Sinatra and Rails</p>
 
-              <h5>Zhuhai International Business School <span class='location'>Zhuhai, Guangdong Province, PRC</span></h5>
+              <h5>Zhuhai International Business School</h5>
+              <h6 class='location'>Zhuhai, Guangdong Province, PRC</h6>
+              <h6 class='date'>August 2012 - May 2013</h6>
               <p><span class='job'>[English Teacher]</span> Taught English to two classes of 30 adults. Developed a curriculum that quickly
                 became popular amongst students. Said curriculum had a strong focus on mastering the basics
                 of English grammar.</p>
 
-              <h5>Yung Wing International Kindergarten <span class='location'>Zhuhai, Guangdong Province, PRC</span></h5>
+              <h5>Yung Wing International Kindergarten</h5>
+              <h6 class='location'>Zhuhai, Guangdong Province, PRC</h6>
+              <h6 class='date'>March 2012 - July 2012</h6>
               <p><span class='job'>[English Teacher] </span> Taught English to 15 children between the ages of 3 and 4.
                 Developed game-based lesson plans. Collaborated with other teachers to develop a school-wide
                 activity that taught students about foreign cultures.</p>
 
-              <h5>Monogram Group <span class='location'>Chicago, IL, USA</span></h5>
+              <h5>Monogram Group</h5>
+              <h6 class='location'>Chicago, IL, USA</h6>
+              <h6 class='date'>July 2011 - January 2012</h6>
               <p><span class='job'>[Copywriting Intern]</span> Responsible for writing copy, the development of marketing strategy, conducting market research, and the promotion of Monogram using social networking tools such as Twitter, Tumblr, and Facebook.</p>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6">
-            <div class = "box skills">
-              <i class="fa fa-star"></i>
-              <h3>Skills</h3>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6">
+          <!-- EDUCATION -->
+          <div class="col-lg-4 col-md-6 pull-left">
             <div class = "box education">
               <i class="fa fa-university"></i>
               <h3>Education</h3>
-
+              <h5>Princeton University <span class='year'> 2011 </span></h5>
+              <p><span class='degree'>[B.A., Philosophy]</span> Conducted research projects in the role of supermassive black holes in galaxy formation, the philosophy of the Special Theory of Relativity, and theories of mathematical truth. </p>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6">
+          <!-- SKILLS -->
+          <div class="col-lg-4 col-md-6 pull-right">
+            <div class = "box skills">
+              <i class="fa fa-code"></i>
+              <h3>Skills</h3>
+              <p>HTML, CSS, JavaScript, jQuery, Ruby, Rails, Sinatra, Ember, and SQL, PostgreSQL and SQLite databases. Version control with Git and Github. Testing with RSpec and Jasmine.</p>
+              <p>Technologies I will be working with in the next couple months include: DataMapper ORM, Angular, Backbone, Sass, and Node, as well as the process of pushing to OpenShift. I have previous experience programming in C, C++, and Java.</p>
+            </div>
+          </div>
+
+
+          <!-- GITHUB ACTIVITY -->
+          <div class="col-lg-4 col-md-6 pull-right">
             <div class = "box github">
               <i class="fa fa-github-alt"></i>
               <h3>Recent Github Activity</h3>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6">
+          <!-- HOBBIES -->
+          <div class="col-lg-4 col-md-6 pull-left">
             <div class = "box hobbies">
               <i class="fa fa-camera-retro"></i>
               <h3>Hobbies and Interests</h3>
+              <p>Shaolin kung fu, san da (Chinese kickboxing), qi gong, tai chi, and jiujutsu; guitar; learning Mandarin Chinese</p>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6">
+          <!-- <div class="col-lg-4 col-md-6">
             <div class = "box">
               More stuff
             </div>
-          </div>
+          </div> -->
 
         </div>
       </div>
     </section>
 
-    <!-- row 3 -->
-    <footer class="row">
-      <div class='row'>
+    <!-- section 4: portfolio -->
+    <section>
 
-      </div>
-         <p><small>Stuff</small></p>
-    </footer>
+    </section>
 
+    <!-- section 5: blog -->
+    <section>
+
+    </section>
+
+    <!-- section 6: contact me -->
+    <section>
+
+    </section>
 
 
 <!-- javascript -->
