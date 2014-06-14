@@ -8,6 +8,7 @@ $.ajax({
          $("#activity").append('Repo: ' + returndata[x]['repo']['name'] );
          $("#activity").append('<br /> Type: ' + returndata[x]['type'] );
          if (returndata[x]['type'] == 'PushEvent'){
+          // change to take account of multiple commits
            $("#activity").append('<br /> Message: ' + returndata[x]['payload']['commits'][0]['message']);
          }
          else if(returndata[x]['type'] == 'CreateEvent') {
@@ -36,3 +37,18 @@ $.ajax({
       }
     }
 });
+
+// Isotope
+
+$( function() {
+  var $container = $('#iso').isotope({
+    itemSelector: '.item',
+    layoutMode: 'fitRows'
+  });
+  $('#portfolio .nav').on( 'click', 'li', function() {
+    var filterValue = $( this ).attr('data-filter');
+    $container.isotope({ filter: filterValue });
+  });
+});
+
+
