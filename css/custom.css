@@ -104,16 +104,19 @@ body {
 
 #iso {
   height: 300px;
-}
-#iso .item{
-  width: 25%;
-  background-color: blue;
-  border: solid black 2px;
   margin-left: 5%;
   margin-right: 5%;
+}
+#iso .item{
+  /*width: 25%;*/
+  border: solid black 2px;
+  margin-left: 5%;
+  padding: 2%;
   margin-top: 1%;
-  position: relative;
-  float: left;
+  /*margin-right: 5%;*/
+  /*margin-top: 1%;*/
+  /*position: relative;*/
+  /*float: left;*/
 }
 
 
