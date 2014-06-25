@@ -50,6 +50,7 @@ body {
 .profile .social i {
   padding: 3px;
   border: solid #4a98db 1px;
+  margin-left: .2%;
 }
 
 .social {
@@ -106,7 +107,7 @@ body {
 
 #contact_me i{
   font-size: 2em;
-  margin-right: 2%
+  margin-left: 2.5%
 }
 
 #contact_me {
@@ -136,3 +137,20 @@ body {
   text-align: right;
 }
 
+#contact_me i {
+  color: #333333;
+}
+
+#contact_me .social i:hover{
+  color: #518bcb;
+}
+
+#contact_me .contact_info p i {
+  font-size: 1em;
+  margin-right: 2%;
+  margin-left: 0;
+}
+
+footer {
+  text-align: center;
+}
