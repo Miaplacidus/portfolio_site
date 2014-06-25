@@ -52,4 +52,18 @@ $( function() {
   });
 });
 
-
+$(".port_link").on('click', function(){
+  $("#portfolio").ScrollTo();
+});
+$(".res_link").on('click', function(){
+  $("#resume").ScrollTo();
+});
+$(".blog_link").on('click', function(){
+  $("#blog").ScrollTo();
+});
+$(".contact_link").on('click', function(){
+  $("#contact_me").ScrollTo();
+});
+$(".prof_link").on('click', function(){
+  $("#profile").ScrollTo();
+});
