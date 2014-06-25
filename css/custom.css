@@ -73,6 +73,7 @@ body {
   border: gray solid 1px;
   margin-bottom: 2%;
   padding: 4% ;
+  background-color: #e6e9ee;
 }
 
 .box i{
@@ -84,6 +85,10 @@ body {
   font-size: .8em;
 }
 
+#portfolio {
+  padding-bottom: 2%;
+}
+
 #iso {
   height: 300px;
 }
@@ -93,6 +98,41 @@ body {
   border: solid black 2px;
   margin-left: 5%;
   margin-right: 5%;
+  margin-top: 1%;
   position: relative;
   float: left;
 }
+
+
+#contact_me i{
+  font-size: 2em;
+  margin-right: 2%
+}
+
+#contact_me {
+  background-color: #e6e9ee;
+  padding-bottom: 5%;
+}
+
+#contact_me h1 {
+  text-align: center;
+  font-size: 3.5em;
+}
+
+#contact_me h1 span {
+  border-bottom: 1px black solid;
+  padding-bottom: 1.5%;
+}
+
+#contact_me h3 {
+  font-size: 2.5em
+}
+
+#contact_me p {
+  font-size: 1.5em;
+}
+
+#contact_me .social {
+  text-align: right;
+}
+
