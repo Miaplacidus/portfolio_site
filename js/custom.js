@@ -38,12 +38,13 @@ $.ajax({
     }
 });
 
-// Isotope
 
+// Isotope
 $( function() {
   var $container = $('#iso').isotope({
     itemSelector: '.item',
-    layoutMode: 'fitRows'
+    layoutMode: 'fitRows',
+    animationEngine: 'jQuery'
   });
   $('#portfolio .nav').on( 'click', 'li', function() {
     var filterValue = $( this ).attr('data-filter');
