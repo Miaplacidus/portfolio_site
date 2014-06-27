@@ -9,11 +9,16 @@ $.ajax({
          $("#activity").append('<br /> Type: ' + returndata[x]['type'] );
          if (returndata[x]['type'] == 'PushEvent'){
           // change to take account of multiple commits
-           $("#activity").append('<br /> Message: ' + returndata[x]['payload']['commits'][0]['message']);
+          for (var i = 0; i < returndata[x]['commits'].length; i++){
+           $("#activity").append('<br /> Message: ' + returndata[x]['payload']['commits'][i]['message']);
+          }
          }
          else if(returndata[x]['type'] == 'CreateEvent') {
           $("#activity").append('<br /> URL: www.github.com/' + returndata[x]['repo']['name']);
           $("#activity").append('<br /> Description: ' + returndata[x]['payload']['description']);
+         }
+         else if (returndata[x]['type'] == 'IssuesEvent'){
+          $("#activity").append('<br /> Description: ' + returndata[x]['payload']['issue']['title']);
          }
          $("#activity").append('<br /> Created At: ' + returndata[x]['created_at'] + '<br /> <br />');
         console.log(returndata[x]['repo']['name'])

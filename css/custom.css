@@ -102,17 +102,22 @@ body {
   padding-bottom: 2%;
 }
 
+#portfolio .construction{
+  margin-left: 5%;
+}
 #iso {
   height: 300px;
   margin-left: 5%;
   margin-right: 5%;
 }
 #iso .item{
-  /*width: 25%;*/
   border: solid black 2px;
+  font-size: 4em;
   margin-left: 5%;
-  padding: 2%;
+  /*padding: 2%;*/
   margin-top: 1%;
+  /*width: 100px;*/
+  /*height: 100px;*/
   /*margin-right: 5%;*/
   /*margin-top: 1%;*/
   /*position: relative;*/
