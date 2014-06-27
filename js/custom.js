@@ -8,19 +8,20 @@ $.ajax({
          $("#activity").append('Repo: ' + returndata[x]['repo']['name'] );
          $("#activity").append('<br /> Type: ' + returndata[x]['type'] );
          if (returndata[x]['type'] == 'PushEvent'){
-          // change to take account of multiple commits
-          for (var i = 0; i < returndata[x]['commits'].length; i++){
-           $("#activity").append('<br /> Message: ' + returndata[x]['payload']['commits'][i]['message']);
-          }
+            for (var i = 0; i < returndata[x]['payload']['commits'].length; i++){
+               $("#activity").append('<br /> Message: ' + returndata[x]['payload']['commits'][i]['message']);
+            }
          }
          else if(returndata[x]['type'] == 'CreateEvent') {
-          $("#activity").append('<br /> URL: www.github.com/' + returndata[x]['repo']['name']);
-          $("#activity").append('<br /> Description: ' + returndata[x]['payload']['description']);
+            $("#activity").append('<br /> URL: www.github.com/' + returndata[x]['repo']['name']);
+            $("#activity").append('<br /> Description: ' + returndata[x]['payload']['description']);
          }
          else if (returndata[x]['type'] == 'IssuesEvent'){
           $("#activity").append('<br /> Description: ' + returndata[x]['payload']['issue']['title']);
          }
-         $("#activity").append('<br /> Created At: ' + returndata[x]['created_at'] + '<br /> <br />');
+         var created_at = returndata[x]['created_at'], created_arr = [];
+         created_arr = created_at.split('T');
+         $("#activity").append('<br /> Created At: ' + created_arr[0] + " " + created_arr[1].slice(0, -1) + "UTC" + '<br /> <br />');
         console.log(returndata[x]['repo']['name'])
         console.log(returndata[x]['payload']['commits'])
       }
@@ -32,14 +33,6 @@ $.ajax({
     dataType: "json",
     success: function (returndata)
     {
-
-      for (var x = 0; x < 3; x++){
-         // $("#activity").append('Repo: ' + returndata[x]['repo']['name'] );
-         // $("#activity").append('<br /> Message: ' + returndata[x]['payload']['commits'][0]['message']);
-         // $("#activity").append('<br /> Created At: ' + returndata[x]['created_at'] + '<br /> <br />');
-        console.log(returndata[x]['repo']['name'])
-        // console.log(returndata[x]['payload']['commits'])
-      }
     }
 });
 
