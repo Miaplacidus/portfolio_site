@@ -3,7 +3,6 @@ $.ajax({
     dataType: "json",
     success: function (returndata)
     {
-
       for (var x = 0; x < 3; x++){
          $("#activity").append('Repo: ' + returndata[x]['repo']['name'] );
          $("#activity").append('<br /> Type: ' + returndata[x]['type'] );
@@ -22,17 +21,22 @@ $.ajax({
          var created_at = returndata[x]['created_at'], created_arr = [];
          created_arr = created_at.split('T');
          $("#activity").append('<br /> Created At: ' + created_arr[0] + " " + created_arr[1].slice(0, -1) + "UTC" + '<br /> <br />');
-        console.log(returndata[x]['repo']['name'])
-        console.log(returndata[x]['payload']['commits'])
       }
     }
 });
 
+function tumblr_callback(returndata){
+  for (var x = 0; x < 6; x++){
+    $("#blog .entry").append("<div class='col-lg-4 col-md-4 col-sm-6'><p>" + returndata['response']['posts'][x]['title'] + returndata['response']['posts'][x]['body'] + '</p></div>');
+
+  }
+}
+
 $.ajax({
-    url: "http://api.tumblr.com/v2/blog/thefustates.tumblr.com/posts/text?api_key={KEY}&notes_info=true",
-    dataType: "json",
-    success: function (returndata)
-    {
+    url: "http://api.tumblr.com/v2/blog/thefustates.tumblr.com/posts?api_key={key}&tag=ifu",
+    dataType: "jsonp",
+    data:{
+      jsonp: "tumblr_callback"
     }
 });
 
