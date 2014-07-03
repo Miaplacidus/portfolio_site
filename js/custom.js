@@ -29,14 +29,15 @@ $.ajax({
 function tumblr_callback(returndata){
   var color= ['block1', 'block2', 'block3']
   for (var x = 0; x < 3; x++){
+    var button = '<div class="btn_div"><a class="button" href="http://www.thefustates.tumblr.com" target="_blank">Visit my blog </a></div>'
     var text = returndata['response']['posts'][x]['body'];
-    text = text.substr(0, 500) + '...'
-    $("#blog .entries").append("<div class='entry " + color[x] + " col-lg-4 col-md-4 col-sm-6'><p><h4>" + returndata['response']['posts'][x]['title'] + '</h4>' + text + "</div></p>");
+    text = text.substr(0, 520) + '</>...';
+    $("#blog .entries").append("<div class='entry " + color[x] + " col-lg-4 col-md-4 col-sm-12'><p><h3>" + returndata['response']['posts'][x]['title'] + '</h3>' + text + '</br></p>' + button + "</div>");
   }
 }
 
 $.ajax({
-    url: "http://api.tumblr.com/v2/blog/thefustates.tumblr.com/posts?api_key={key}&tag=ifu",
+    url: "http://api.tumblr.com/v2/blog/thefustates.tumblr.com/posts?api_key=j7I4iMcSURmujqntnIW53jVYsAl8e2HXpC36MUxz87Wym91AyF&tag=ifu",
     dataType: "jsonp",
     data:{
       jsonp: "tumblr_callback"
