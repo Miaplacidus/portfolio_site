@@ -82,11 +82,16 @@ body {
   color: white;
 }
 
+#resume {
+  background-color: #fefefe;
+}
+
 .box {
   border: gray solid 1px;
   margin-bottom: 2%;
   padding: 4% ;
-  background-color: #e6e9ee;
+  /*background-color: #e6e9ee;*/
+  background-color: #f6f6ee;
 }
 
 .box i{
@@ -127,12 +132,14 @@ body {
 
 #contact_me i{
   font-size: 2em;
-  margin-left: 2.5%
+  margin-left: 2.5%;
+  color: #333333;
 }
 
 #contact_me {
   background-color: #e6e9ee;
   padding-bottom: 5%;
+  border-top: black solid 1px;
 }
 
 #contact_me h1 {
@@ -157,10 +164,6 @@ body {
   text-align: right;
 }
 
-#contact_me i {
-  color: #333333;
-}
-
 #contact_me .social i:hover{
   color: #518bcb;
 }
@@ -169,6 +172,34 @@ body {
   font-size: 1em;
   margin-right: 2%;
   margin-left: 0;
+}
+
+#blog {
+  font-family: 'Raleway';
+  /*color: white;*/
+  /*background-color: #0E354C;*/
+}
+
+.entry {
+  height: 300px;
+  color: white;
+}
+
+.entry p {
+  font-size: 1.1em;
+  word-spacing: 3px;
+}
+
+.entries .block1 {
+  background-color: #0E354C;
+}
+
+.entries .block2 {
+  background-color: green;
+}
+
+.entries .block3 {
+  background-color: orange;
 }
 
 footer {

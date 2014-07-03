@@ -25,10 +25,13 @@ $.ajax({
     }
 });
 
-function tumblr_callback(returndata){
-  for (var x = 0; x < 6; x++){
-    $("#blog .entry").append("<div class='col-lg-4 col-md-4 col-sm-6'><p>" + returndata['response']['posts'][x]['title'] + returndata['response']['posts'][x]['body'] + '</p></div>');
 
+function tumblr_callback(returndata){
+  var color= ['block1', 'block2', 'block3']
+  for (var x = 0; x < 3; x++){
+    var text = returndata['response']['posts'][x]['body'];
+    text = text.substr(0, 500) + '...'
+    $("#blog .entries").append("<div class='entry " + color[x] + " col-lg-4 col-md-4 col-sm-6'><p><h4>" + returndata['response']['posts'][x]['title'] + '</h4>' + text + "</div></p>");
   }
 }
 
@@ -39,7 +42,6 @@ $.ajax({
       jsonp: "tumblr_callback"
     }
 });
-
 
 // Isotope
 $( function() {
