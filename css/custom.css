@@ -56,7 +56,7 @@ body {
 
 .content {
   padding: 2% 6%;
-  border-bottom: #dee4ea solid 1px;
+  /*border-bottom: #dee4ea solid 1px;*/
 }
 
 #profile .social i {
@@ -141,9 +141,9 @@ body {
 }
 
 #contact_me {
-  background-color: #e6e9ee;
+  /*background-color: #dff8f6;*/
+  background-color: #79B9E6;
   padding-bottom: 5%;
-  border-top: black solid 1px;
 }
 
 #contact_me h1 {
@@ -164,12 +164,19 @@ body {
   font-size: 1.5em;
 }
 
-#contact_me .social {
+#contact_me .social_med {
   text-align: right;
 }
 
-#contact_me .social i:hover{
-  color: #518bcb;
+#contact_me .social_med i:hover{
+  /*color: #518bcb;*/
+  color: #DDDED9;
+}
+
+.social_med {
+  padding: 3% 3%;
+  /*border-bottom: #e0e5ea solid 1px;*/
+  font-size: 1.2em;
 }
 
 #contact_me .contact_info p i {
@@ -178,9 +185,19 @@ body {
   margin-left: 0;
 }
 
+#contact_me .email {
+
+}
+
+#contact_me .email a:hover{
+  color: #ddded9;
+  text-decoration: none;
+}
+
 #blog {
   font-family: 'Raleway';
-  background-color: #dff8f6;
+  /*background-color: #dff8f6;*/
+  background-color: #39A3EE;
   padding-bottom: 0;
   padding-left: .8%;
   padding-right: 0;
