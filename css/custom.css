@@ -113,26 +113,61 @@ body {
 #portfolio .construction{
   margin-left: 5%;
 }
+
 #iso {
   height: 300px;
   margin-left: 5%;
   margin-right: 5%;
 }
+
 #iso .item{
+  font-family: "Trebuchet MS";
   border: solid black 2px;
-  font-size: 4em;
+  border-radius: 3px;
   margin-left: 5%;
-  /*background-color: #fdfdfd;*/
-  /*padding: 2%;*/
   margin-top: 1%;
-  /*width: 100px;*/
-  /*height: 100px;*/
-  /*margin-right: 5%;*/
-  /*margin-top: 1%;*/
-  /*position: relative;*/
-  /*float: left;*/
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  vertical-align: center;
 }
 
+#iso .item i {
+  font-size: 4em;
+}
+
+#iso .ruby {
+  background-color:#94090D;
+}
+
+#iso .ruby i {
+  color: #450003;
+}
+
+#iso .js i , #iso .ember i{
+  color: #FFdf22;
+}
+
+#iso .js, #iso .ember {
+  background-color: #FFBE00;
+}
+
+#iso .design {
+  background-color: #336699;
+}
+
+#iso .design i {
+  color: #0E1E8C;
+}
+
+#iso .item a {
+  color: white;
+}
+
+#iso .item a:hover{
+  text-decoration: none;
+  color: #789FFF;
+}
 
 #contact_me i{
   font-size: 2em;
@@ -185,8 +220,8 @@ body {
   margin-left: 0;
 }
 
-#contact_me .email {
-
+#contact_me .email a:link {
+  color: #336699;
 }
 
 #contact_me .email a:hover{
@@ -239,6 +274,7 @@ body {
   padding: 2%;
   margin-left: auto;
   margin-right: auto;
+  color: #39A3EE;
 }
 
 .entry .button:hover{
@@ -261,7 +297,7 @@ body {
 }
 
 .entries .block3 {
-  background-color: orange;
+  background-color: #E5A35E;
 }
 
 footer {
