@@ -57,18 +57,23 @@ $( function() {
   });
 });
 
-$(".port_link").on('click', function(){
+$(".port_link").on('click', function(e){
+  e.preventDefault();
   $("#portfolio").ScrollTo();
 });
-$(".res_link").on('click', function(){
+$(".res_link").on('click', function(e){
+  e.preventDefault();
   $("#resume").ScrollTo();
 });
-$(".blog_link").on('click', function(){
+$(".blog_link").on('click', function(e){
+  e.preventDefault();
   $("#blog").ScrollTo();
 });
-$(".contact_link").on('click', function(){
+$(".contact_link").on('click', function(e){
+  e.preventDefault();
   $("#contact_me").ScrollTo();
 });
-$(".prof_link").on('click', function(){
+$(".prof_link").on('click', function(e){
+  e.preventDefault();
   $("#profile").ScrollTo();
 });
