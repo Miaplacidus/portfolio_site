@@ -305,15 +305,32 @@ footer {
 }
 
 @media(max-width: 768px){
-  .entry {
-    padding: 1% 7%;
-    height: 500px;
-  }
 
-  #profile .intro {
+ #profile .social i {
+  font-size: 1.7em;
+  margin-left: 3%;
+ }
+
+ #profile h1, #profile h2 {
+  padding-left: 2%;
+ }
+
+ #profile .intro {
     line-height: 1.2em;
   }
 
+  #profile .findme h4{
+    padding-left: 2%;
+  }
+
+  #blog h2 {
+    padding-left: 4%;
+  }
+
+  .entry {
+    padding: 1% 7%;
+    height: 540px;
+  }
 
 }
 
