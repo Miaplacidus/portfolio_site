@@ -100,6 +100,9 @@ body {
   font-size: 3em;
 }
 
+
+
+/* PORTFOLIO */
 #portfolio nav {
   font-family: 'Raleway';
   font-size: 1em;
@@ -114,6 +117,10 @@ body {
   margin-left: 5%;
 }
 
+#portfolio .project-desc {
+  /*display: none*/
+}
+
 #iso {
   height: 300px;
   margin-left: 5%;
@@ -122,7 +129,6 @@ body {
 
 #iso .item {
   font-family: "Trebuchet MS";
-  border: solid black 2px;
   border-radius: 3px;
   margin-left: 5%;
   margin-top: 1%;
@@ -136,39 +142,58 @@ body {
   vertical-align: middle;
 }
 
-#iso .ruby i {
-  font-size: 7em;
-}
-
-
-#iso .js i , #iso .ember i{
-  color: #FFdf22;
-}
-
-#iso .js, #iso .ember {
-  font-size: 7em;
-  background-color: #FFBE00;
-  line-height: 1.3em;
-}
-
-#iso .design {
-  background-color: #336699;
-}
-
-#iso .design i {
-  color: #0E1E8C;
-  font-size: 6.5em;
-  line-height: 1.5em;
-  vertical-align: middle;
-}
-
-
-
 #iso .item a:hover{
   text-decoration: none;
   color: #789FFF;
 }
 
+
+/* Ruby squares */
+#iso .ruby {
+  /*border: dotted #BD0503 1px;*/
+  border: dotted #94090D 1px
+}
+
+#iso .ruby a:link{
+  color: #BD0503;
+}
+
+
+/* Javascript/JS frameworks squares*/
+#iso .js i , #iso .ember i {
+  /*color: #FFdf22;*/
+  color: #333333;
+}
+
+#iso .js, #iso .ember {
+  /*background-color: #FFBE00;*/
+  border: dotted #FFBE00 1px;
+}
+
+
+/* HTML/CSS squares */
+#iso .design {
+  /*background-color: #336699;*/
+  border: dotted #6E94BD 1px;
+}
+
+#iso .design i {
+  /*color: #0E1E8C;*/
+  padding-top: 0;
+}
+
+#iso .design h4 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+#iso .design .fa-css3 {
+  color: #333333;
+}
+
+
+
+/* CONTACT SECTION */
 #contact_me i{
   font-size: 2em;
   margin-left: 2.5%;
@@ -369,5 +394,42 @@ footer {
   #iso .item {
     width: 220px;
     height: 220px;
+  }
+
+  #iso .ruby i {
+    font-size: 7em;
+  }
+
+  #iso .js, #iso .ember {
+    font-size: 7.4em;
+    line-height: 1.2em;
+  }
+
+  #iso .design i {
+    /*color: #0E1E8C;*/
+    font-size: 6.2em;
+    line-height: 1.7em;
+    padding-top: 0;
+  }
+
+  #iso .item .project-desc {
+    display: none;
+  }
+
+  #iso .item:hover .project-desc{
+    display: block;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    width: 100%;
+    text-align: center;
+
+    background: rgba(255, 255, 255, 0.85);
+    background: rgba(230, 230, 230, 0.85);
+  }
+
+  #iso .ruby:hover .project-desc {
+    /*color: white;
+    background: rgba(148, 9, 13, .90);*/
   }
  }
