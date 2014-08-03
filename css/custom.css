@@ -120,7 +120,7 @@ body {
   margin-right: 5%;
 }
 
-#iso .item{
+#iso .item {
   font-family: "Trebuchet MS";
   border: solid black 2px;
   border-radius: 3px;
@@ -133,23 +133,22 @@ body {
 }
 
 #iso .item i {
-  font-size: 4em;
-}
-
-#iso .ruby {
-  background-color:#94090D;
+  vertical-align: middle;
 }
 
 #iso .ruby i {
-  color: #450003;
+  font-size: 7em;
 }
+
 
 #iso .js i , #iso .ember i{
   color: #FFdf22;
 }
 
 #iso .js, #iso .ember {
+  font-size: 7em;
   background-color: #FFBE00;
+  line-height: 1.3em;
 }
 
 #iso .design {
@@ -158,11 +157,12 @@ body {
 
 #iso .design i {
   color: #0E1E8C;
+  font-size: 6.5em;
+  line-height: 1.5em;
+  vertical-align: middle;
 }
 
-#iso .item a {
-  color: white;
-}
+
 
 #iso .item a:hover{
   text-decoration: none;
