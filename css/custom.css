@@ -101,7 +101,6 @@ body {
 }
 
 
-
 /* PORTFOLIO */
 #portfolio nav {
   font-family: 'Raleway';
@@ -147,38 +146,62 @@ body {
   color: #789FFF;
 }
 
+#iso .item .project-desc {
+    display: none;
+  }
+
+#iso .item:hover .project-desc{
+    display: block;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    width: 100%;
+    text-align: center;
+    padding: 1%;
+    vertical-align: middle;
+    background: rgba(240, 240, 240, 0.85);
+    /*color: #333333;*/
+    color: #2B2827;
+  }
+
+#iso .js div.project-desc i{
+    color: #FFBE00;
+  }
+
+  #iso .js div.project-desc i:hover {
+    color: #FFDE20;
+  }
+
 
 /* Ruby squares */
 #iso .ruby {
-  /*border: dotted #BD0503 1px;*/
-  border: dotted #94090D 1px
+  border: dotted #BD0503 1px;
 }
 
-#iso .ruby a:link{
+#iso .ruby a:link, #iso .ruby a:visited{
   color: #BD0503;
 }
 
+#iso .ruby div.project-desc i:hover{
+  color: #FF1D23;
+}
 
 /* Javascript/JS frameworks squares*/
 #iso .js i , #iso .ember i {
-  /*color: #FFdf22;*/
   color: #333333;
 }
 
 #iso .js, #iso .ember {
-  /*background-color: #FFBE00;*/
   border: dotted #FFBE00 1px;
 }
 
 
 /* HTML/CSS squares */
 #iso .design {
-  /*background-color: #336699;*/
   border: dotted #6E94BD 1px;
 }
 
 #iso .design i {
-  /*color: #0E1E8C;*/
   padding-top: 0;
 }
 
@@ -186,11 +209,6 @@ body {
   margin-top: 0;
   margin-bottom: 0;
 }
-
-#iso .design .fa-css3 {
-  color: #333333;
-}
-
 
 
 /* CONTACT SECTION */
@@ -201,7 +219,6 @@ body {
 }
 
 #contact_me {
-  /*background-color: #dff8f6;*/
   background-color: #79B9E6;
   padding-bottom: 5%;
 }
@@ -229,13 +246,11 @@ body {
 }
 
 #contact_me .social_med i:hover{
-  /*color: #518bcb;*/
   color: #DDDED9;
 }
 
 .social_med {
   padding: 3% 3%;
-  /*border-bottom: #e0e5ea solid 1px;*/
   font-size: 1.2em;
 }
 
@@ -256,7 +271,6 @@ body {
 
 #blog {
   font-family: 'Raleway';
-  /*background-color: #dff8f6;*/
   background-color: #39A3EE;
   padding-bottom: 0;
   padding-left: .8%;
@@ -272,7 +286,6 @@ body {
 }
 
 .entry {
-  /*color: #dff8e8;*/
   color: #e1dfdf;
   padding: 1% 3%;
   height: 410px;
@@ -400,9 +413,18 @@ footer {
     font-size: 7em;
   }
 
-  #iso .js, #iso .ember {
+  #iso .js > i {
     font-size: 7.4em;
-    line-height: 1.2em;
+    line-height: 1.42em;
+  }
+
+  #iso .js h4 {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  #iso .js div.project-desc p{
+    font-size: 1em;
   }
 
   #iso .design i {
@@ -412,24 +434,9 @@ footer {
     padding-top: 0;
   }
 
-  #iso .item .project-desc {
-    display: none;
+  #iso .ruby:hover .project-desc i, #iso .js:hover .project-desc i, #iso .design:hover .project-desc i{
+    font-size: 2.2em;
+    margin-left: 3%;
   }
 
-  #iso .item:hover .project-desc{
-    display: block;
-    position: absolute;
-    top: 0px;
-    bottom: 0px;
-    width: 100%;
-    text-align: center;
-
-    background: rgba(255, 255, 255, 0.85);
-    background: rgba(230, 230, 230, 0.85);
-  }
-
-  #iso .ruby:hover .project-desc {
-    /*color: white;
-    background: rgba(148, 9, 13, .90);*/
-  }
  }
