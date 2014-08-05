@@ -157,21 +157,17 @@ body {
     bottom: 0px;
     width: 100%;
     text-align: center;
-    padding: 1%;
+    padding: 1.5%;
     vertical-align: middle;
     background: rgba(240, 240, 240, 0.85);
     /*color: #333333;*/
     color: #2B2827;
   }
 
-#iso .js div.project-desc i{
-    color: #FFBE00;
-  }
-
-  #iso .js div.project-desc i:hover {
-    color: #FFDE20;
-  }
-
+#iso .ruby:hover .project-desc i, #iso .js:hover .project-desc i, #iso .design:hover .project-desc i{
+  font-size: 2.2em;
+  margin-left: 3%;
+}
 
 /* Ruby squares */
 #iso .ruby {
@@ -186,6 +182,14 @@ body {
   color: #FF1D23;
 }
 
+#iso .ruby i {
+  font-size: 6em;
+}
+
+#iso .ruby div.project-desc h3{
+  font-size: 1.35em;
+}
+
 /* Javascript/JS frameworks squares*/
 #iso .js i , #iso .ember i {
   color: #333333;
@@ -195,14 +199,37 @@ body {
   border: dotted #FFBE00 1px;
 }
 
+#iso .js > i {
+  font-size: 7.2em;
+  line-height: 1.3em;
+}
+
+#iso .js h4 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+#iso .js div.project-desc i{
+  color: #FFBE00;
+}
+
+#iso .js div.project-desc i:hover {
+  color: #FFDE20;
+}
+
+#iso .js div.project-desc p{
+  font-size: 1em;
+  margin-bottom: 0;
+  line-height: 1.3em;
+}
+
+#iso .js div.project-desc h3{
+  font-size: 1.35em;
+}
 
 /* HTML/CSS squares */
 #iso .design {
   border: dotted #6E94BD 1px;
-}
-
-#iso .design i {
-  padding-top: 0;
 }
 
 #iso .design h4 {
@@ -210,6 +237,16 @@ body {
   margin-bottom: 0;
 }
 
+#iso .design i {
+  /*color: #0E1E8C;*/
+  font-size: 6.2em;
+  line-height: 1.7em;
+  padding-top: 0;
+}
+
+#iso .js div.project-desc h3{
+  font-size: 1.45em;
+}
 
 /* CONTACT SECTION */
 #contact_me i{
@@ -375,6 +412,10 @@ footer {
     height: 190px;
   }
 
+  #iso .js div.project-desc p{
+    line-height: 1.3em;
+  }
+
 }
 
 @media (min-width: 768px) and (max-width: 992px) {
@@ -437,6 +478,10 @@ footer {
   #iso .ruby:hover .project-desc i, #iso .js:hover .project-desc i, #iso .design:hover .project-desc i{
     font-size: 2.2em;
     margin-left: 3%;
+  }
+
+  #iso .item:hover .project-desc {
+    padding: 1%;
   }
 
  }
