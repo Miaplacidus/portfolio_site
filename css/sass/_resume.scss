@@ -1,0 +1,19 @@
+/*
+
+RESUME
+
+*/
+#resume {
+  background-color: $color-white;
+  .box {
+    border: $color-gray solid 1px;
+    margin-bottom: 2%;
+    padding: 4% ;
+    font-family: $font-raleway;
+    background-color: $color-white;
+
+    i {
+      font-size: 3em;
+    }
+  }
+}

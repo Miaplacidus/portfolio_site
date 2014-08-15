@@ -1,0 +1,277 @@
+body {
+  padding-top: 50px; }
+
+.content, #profile .content {
+  padding: 2% 6%; }
+
+footer {
+  text-align: center; }
+
+/*
+
+MAIN NAVIGATION
+
+*/
+.navbar {
+  width: 100%;
+  font-family: "Raleway", Helvetica, sans-serif; }
+  .navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+    font-size: 1em;
+    font-weight: bold; }
+    .navbar .navbar-nav > li > a:hover,
+    .navbar .navbar-nav > li > a:focus {
+      background-color: transparent;
+      border-bottom: 1px solid black; }
+    .navbar .navbar-nav > .active > a,
+    .navbar .navbar-nav > .active > a:hover,
+    .navbar .navbar-nav > .active > a:focus {
+      background: none; }
+
+.navbar-default {
+  background: rgba(255, 255, 255, 0.85);
+  border: none;
+  color: #777777;
+  text-align: center; }
+
+/*
+
+PROFILE
+
+*/
+#profile {
+  background: url("../img/bruce.jpg") top center no-repeat;
+  background-size: cover;
+  color: #4a98db; }
+  #profile .content .social {
+    padding: 3% 3%;
+    border-bottom: #e0e5ea solid 1px;
+    font-size: 1.2em; }
+    #profile .content .social i {
+      padding: 3px;
+      border: solid #4a98db 1px;
+      margin-left: .2%; }
+  #profile .content .about {
+    padding: 14% 3%;
+    border-bottom: #e0e5ea solid 1px;
+    color: #4a98db; }
+    #profile .content .about .intro {
+      background: rgba(255, 255, 255, 0.85);
+      font-size: 1.5em; }
+  #profile .content .findme {
+    padding: 3% 3%;
+    color: white; }
+    #profile .content .findme .number {
+      font-size: 1em; }
+
+/*
+
+RESUME
+
+*/
+#resume {
+  background-color: white; }
+  #resume .box {
+    border: gray solid 1px;
+    margin-bottom: 2%;
+    padding: 4%;
+    font-family: "Raleway", Helvetica, sans-serif;
+    background-color: white; }
+    #resume .box i {
+      font-size: 3em; }
+
+/*
+
+PORTFOLIO
+
+*/
+#portfolio {
+  padding-bottom: 2%;
+  background-color: white; }
+  #portfolio nav {
+    font-family: "Raleway", Helvetica, sans-serif;
+    font-size: 1em; }
+  #portfolio #iso {
+    height: 300px;
+    margin-left: 5%;
+    margin-right: 5%; }
+    #portfolio #iso .item {
+      font-family: "Trebuchet MS", Helvetica, sans-serif;
+      border-radius: 3px;
+      margin-left: 5%;
+      margin-top: 1%;
+      text-align: center;
+      vertical-align: center; }
+      #portfolio #iso .item i {
+        vertical-align: middle; }
+      #portfolio #iso .item a:hover {
+        text-decoration: none;
+        color: #789fff; }
+      #portfolio #iso .item .project-desc {
+        display: none; }
+      #portfolio #iso .item:hover .project-desc {
+        display: block;
+        position: absolute;
+        top: 0px;
+        bottom: 0px;
+        width: 100%;
+        text-align: center;
+        padding: 1.5%;
+        vertical-align: middle;
+        background: rgba(240, 240, 240, 0.85);
+        color: #2b2827; }
+    #portfolio #iso .ruby {
+      border: dotted #bd0503 1px; }
+      #portfolio #iso .ruby i {
+        font-size: 6em; }
+      #portfolio #iso .ruby:hover .project-desc i {
+        font-size: 2.2em;
+        margin-left: 3%; }
+      #portfolio #iso .ruby a:link,
+      #portfolio #iso .ruby a:visited {
+        color: #bd0503; }
+      #portfolio #iso .ruby .project-desc i:hover {
+        color: #ff1d23; }
+      #portfolio #iso .ruby .project-desc h3 {
+        font-size: 1.35em; }
+    #portfolio #iso .js {
+      border: dotted #ffbe00 1px; }
+      #portfolio #iso .js i {
+        color: #333333; }
+      #portfolio #iso .js:hover .project-desc i {
+        font-size: 2.2em;
+        margin-left: 3%; }
+      #portfolio #iso .js > i {
+        font-size: 7.2em;
+        line-height: 1.3em; }
+      #portfolio #iso .js h4 {
+        margin-top: 0;
+        margin-bottom: 0; }
+      #portfolio #iso .js .project-desc i {
+        color: #ffbe00; }
+      #portfolio #iso .js .project-desc i:hover {
+        color: #ffde20; }
+      #portfolio #iso .js .project-desc p {
+        font-size: 1em;
+        margin-bottom: 0;
+        line-height: 1.3em; }
+      #portfolio #iso .js .project-desc h3 {
+        font-size: 1.35em; }
+    #portfolio #iso .design {
+      border: dotted #6e94bd 1px; }
+      #portfolio #iso .design:hover .project-desc i {
+        font-size: 2.2em;
+        margin-left: 3%; }
+      #portfolio #iso .design h4 {
+        margin-top: 0;
+        margin-bottom: 0; }
+      #portfolio #iso .design i {
+        font-size: 6.2em;
+        line-height: 1.7em;
+        padding-top: 0; }
+      #portfolio #iso .design .project-desc h3 {
+        font-size: 1.45em; }
+
+/*
+
+CONTACT SECTION
+
+*/
+#contact_me {
+  background-color: #79b9e6;
+  padding-bottom: 5%; }
+  #contact_me h1 {
+    text-align: center;
+    font-size: 3.5em; }
+    #contact_me h1 span {
+      border-bottom: 1px black solid;
+      padding-bottom: 1.5%; }
+  #contact_me h3 {
+    font-size: 2.5em; }
+  #contact_me i {
+    font-size: 2em;
+    margin-left: 2.5%;
+    color: #333333; }
+  #contact_me p {
+    font-size: 1.5em; }
+  #contact_me .social_med {
+    text-align: right;
+    padding: 3% 3%;
+    font-size: 1.2em; }
+    #contact_me .social_med i:hover {
+      color: #ddded9; }
+  #contact_me .contact_info p i {
+    font-size: 1em;
+    margin-right: 2%;
+    margin-left: 0; }
+  #contact_me .email a:link {
+    color: #336699; }
+  #contact_me .email a:hover {
+    color: #ddded9;
+    text-decoration: none; }
+
+/*
+
+BLOG
+
+*/
+#blog {
+  font-family: "Raleway", Helvetica, sans-serif;
+  background-color: #39a3ee;
+  padding-bottom: 0;
+  padding-left: 0.8%;
+  padding-right: 0; }
+  @media screen and (max-width: 768px) {
+    #blog h3 {
+      padding-left: 4%; }
+    #blog .entry {
+      padding: 1% 7%;
+      height: 540px; } }
+  @media screen and (min-width: 768px) and (max-width: 992px) {
+    #blog .entry {
+      height: 400px; } }
+  @media screen and (min-width: 992px) and (max-width: 1200px) {
+    #blog .entry {
+      height: 550px; } }
+  @media screen and (min-width: 1200px) {
+    #blog .entry {
+      height: 480px; } }
+  #blog h2 {
+    margin-left: 3%; }
+  #blog h4 {
+    margin-left: 3%; }
+  #blog .entries .block1 {
+    background-color: #0e354c; }
+  #blog .entries .block2 {
+    background-color: #e62b4b; }
+  #blog .entries .block3 {
+    background-color: #e5a35e; }
+  #blog .entry {
+    color: #e1dfdf;
+    padding: 1% 3%;
+    height: 410px; }
+    #blog .entry p {
+      font-size: 1.2em;
+      word-spacing: 2px;
+      margin-top: 1.8%;
+      margin-bottom: 0; }
+    #blog .entry .btn_div {
+      margin-top: 7%;
+      margin-bottom: 1%;
+      text-align: center; }
+    #blog .entry .button {
+      font-size: 1.2em;
+      letter-spacing: 2px;
+      border: solid white 2px;
+      border-radius: 2px;
+      padding: 2%;
+      margin-left: auto;
+      margin-right: auto;
+      color: #39a3ee; }
+    #blog .entry .button:hover {
+      background: rgba(255, 255, 255, 0.85); }
+    #blog .entry a:link {
+      color: white; }
+    #blog .entry a:hover {
+      text-decoration: none; }

@@ -1,0 +1,70 @@
+/*
+
+CONTACT SECTION
+
+*/
+#contact_me {
+  background-color: $color-robins-egg;
+  padding-bottom: 5%;
+
+  h1 {
+    text-align: center;
+    font-size: 3.5em;
+
+    span {
+      border-bottom: 1px $color-black solid;
+      padding-bottom: 1.5%;
+    }
+  }
+
+  h3 {
+    font-size: 2.5em
+  }
+
+  i {
+    font-size: 2em;
+    margin-left: 2.5%;
+    color: $color-granite;
+  }
+
+  p {
+    font-size: 1.5em;
+  }
+
+  .social_med {
+    text-align: right;
+    padding: 3% 3%;
+    font-size: 1.2em;
+
+    i:hover {
+      color: $color-cloud;
+    }
+  }
+
+  .contact_info p i {
+    font-size: 1em;
+    margin-right: 2%;
+    margin-left: 0;
+  }
+
+  .email {
+    a{
+      &:link {
+        color: $color-dark-blue;
+      }
+      &:hover{
+        color: $color-cloud;
+        text-decoration: none;
+      }
+    }
+  }
+
+}
+
+
+
+
+
+
+
+

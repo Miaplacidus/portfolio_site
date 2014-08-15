@@ -1,0 +1,46 @@
+/*
+
+PROFILE
+
+*/
+#profile {
+  background:url('../img/bruce.jpg') top center no-repeat;
+  background-size: cover;
+  color: $color-sky-blue;
+
+  .content {
+    @extend .content;
+
+    .social {
+      padding: 3% 3%;
+      border-bottom: $color-light-gray solid 1px;
+      font-size: 1.2em;
+
+      i {
+        padding: 3px;
+        border: solid $color-sky-blue 1px;
+        margin-left: .2%;
+      }
+    }
+
+    .about {
+      padding: 14% 3%;
+      border-bottom: $color-light-gray solid 1px;
+      color: $color-sky-blue;
+
+      .intro {
+        background: $color-white-opaque;
+        font-size: 1.5em;
+      }
+    }
+
+    .findme {
+      padding: 3% 3%;
+      color: $color-white;
+
+      .number {
+        font-size: 1em;
+      }
+    }
+  }
+}

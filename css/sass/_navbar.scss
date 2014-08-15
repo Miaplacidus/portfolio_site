@@ -1,0 +1,35 @@
+/*
+
+MAIN NAVIGATION
+
+*/
+.navbar {
+    width: 100%;
+    font-family: $font-raleway;
+
+    .navbar-nav {
+        display: inline-block;
+        float:none;
+        font-size: 1em;
+        font-weight: bold;
+
+        >li>a:hover,
+        >li>a:focus {
+            background-color: transparent;
+            border-bottom: 1px solid $color-black;
+        }
+
+        >.active>a,
+        >.active>a:hover,
+        >.active>a:focus {
+            background: none;
+        }
+    }
+}
+
+.navbar-default {
+    background: $color-white-opaque;
+    border: none;
+    color:$color-dark-gray;
+    text-align: center;
+}

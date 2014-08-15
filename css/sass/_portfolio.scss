@@ -1,0 +1,157 @@
+/*
+
+PORTFOLIO
+
+*/
+@mixin font-margin {
+    font-size: 2.2em;
+    margin-left: 3%;
+  }
+
+#portfolio {
+  padding-bottom: 2%;
+  background-color: $color-white;
+
+  nav {
+    font-family: $font-raleway;
+    font-size: 1em;
+  }
+
+  #iso {
+    height: 300px;
+    margin-left: 5%;
+    margin-right: 5%;
+
+
+    .item {
+      font-family: $font-trebuchet;
+      border-radius: 3px;
+      margin-left: 5%;
+      margin-top: 1%;
+      text-align: center;
+      vertical-align: center;
+
+      i {
+        vertical-align: middle;
+      }
+
+      a:hover{
+        text-decoration: none;
+        color: $color-indigo;
+      }
+
+      .project-desc {
+          display: none;
+      }
+
+      &:hover .project-desc{
+          display: block;
+          position: absolute;
+          top: 0px;
+          bottom: 0px;
+          width: 100%;
+          text-align: center;
+          padding: 1.5%;
+          vertical-align: middle;
+          background: $color-gray-opaque;
+          color: $color-slate;
+      }
+    }
+
+    .ruby {
+
+      border: dotted $color-ruby 1px;
+
+      i {
+        font-size: 6em;
+      }
+
+      &:hover .project-desc i {
+        @include font-margin;
+      }
+
+      a:link,
+      a:visited {
+        color: $color-ruby;
+      }
+
+      .project-desc {
+        i:hover {
+          color: $color-cherry;
+        }
+
+        h3 {
+          font-size: 1.35em;
+        }
+      }
+
+    }
+
+    .js {
+
+      border: dotted $color-sunflower 1px;
+
+      i {
+        color: #333333;
+      }
+
+      &:hover .project-desc i {
+        @include font-margin;
+      }
+
+      >i {
+        font-size: 7.2em;
+        line-height: 1.3em;
+      }
+
+      h4 {
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+
+      .project-desc {
+        i {
+          color: $color-sunflower;
+        }
+
+        i:hover {
+          color: $color-corona;
+        }
+
+        p {
+          font-size: 1em;
+          margin-bottom: 0;
+          line-height: 1.3em;
+        }
+
+        h3 {
+          font-size: 1.35em;
+        }
+      }
+
+    }
+
+    .design {
+      border: dotted $color-light-blue 1px;
+
+      &:hover .project-desc i {
+        @include font-margin;
+      }
+
+      h4 {
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+      i {
+        font-size: 6.2em;
+        line-height: 1.7em;
+        padding-top: 0;
+      }
+
+      .project-desc h3{
+        font-size: 1.45em;
+      }
+
+    }
+  }
+}
